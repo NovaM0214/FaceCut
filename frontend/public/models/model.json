@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+{"modelType":"tinyYolov2","inputSize":416,"inputRange":[0,1],"mean":[0,0,0],"std":[1,1,1],"numClasses":80,"anchors":[10,14,23,27,37,58,81,82,135,169,344,319],"iouThreshold":0.45,"scoreThreshold":0.5}
+
