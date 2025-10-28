@@ -22,7 +22,7 @@ const Preview = ({ xOffset, yOffset, faceBoxSize, onXChange, onYChange, onFaceBo
       formData.append('file', file);
 
       try {
-        const detectResponse = await fetch('/api/detect', {
+        const detectResponse = await fetch('http://127.0.0.1:5000/detect', {
           method: 'POST',
           body: formData,
         });
