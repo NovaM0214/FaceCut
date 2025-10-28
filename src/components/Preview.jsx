@@ -73,8 +73,8 @@ const Preview = ({ xOffset, yOffset, faceBoxSize, onXChange, onYChange, onFaceBo
 
     ctx.strokeStyle = 'blue';
     ctx.lineWidth = 2;
-    const faceBoxGuideX = (canvas.width - faceBoxSize) / 2;
-    const faceBoxGuideY = (canvas.height - faceBoxSize) / 2;
+    const faceBoxGuideX = (canvas.width - faceBoxSize) / 2 + xOffset;
+    const faceBoxGuideY = (canvas.height - faceBoxSize) / 2 + yOffset;
     ctx.strokeRect(faceBoxGuideX, faceBoxGuideY, faceBoxSize, faceBoxSize);
 
   }, [isImageLoaded, previewFace, xOffset, yOffset, faceBoxSize]);
